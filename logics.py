@@ -38,11 +38,5 @@ def calculate_top_20_values(df, selected_column):
 
     return top_values
 
-# Sample usage
-# df = pd.read_csv("path/to/your/file.csv")
-# selected_column = "your_numeric_column"
-# numeric_stats = calculate_numeric_stats(df, selected_column)
-# histogram_chart = generate_histogram_chart(df, selected_column)
-# top_values = calculate_top_20_values(df, selected_column)
-# print(numeric_stats)
-# print(top_values)
+
+
