@@ -28,7 +28,7 @@ def display_numeric_tab(df):
 
     st.table(stats_table)
 
-    # Interactive Altair histogram chart
+  
     st.write(f"### Histogram for {selected_column}")
     chart = alt.Chart(df).mark_bar().encode(
         alt.X(selected_column, bin=True),
@@ -45,6 +45,3 @@ def display_numeric_tab(df):
     top_values['Percentage'] = (top_values['Occurrences'] / len(df)) * 100
     st.table(top_values)
 
-# Sample usage
-# df = pd.read_csv("path/to/your/file.csv")
-# display_numeric_tab(df)
